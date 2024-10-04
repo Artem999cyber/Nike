@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="541.0" style="-fx-background-color: #b1b9c9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CompOrderController">
+   <children>
+      <ImageView fitHeight="280.0" fitWidth="541.0">
+         <image>
+            <Image url="@pngwing.com.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="47.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PriceList">
+         <font>
+            <Font name="TTTravels-DemiBoldItalic" size="23.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchField" layoutX="21.0" layoutY="21.0" promptText="Поиск" />
+      <TableView fx:id="orderTable" layoutX="1.0" layoutY="280.0" prefHeight="246.0" prefWidth="541.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="45.40000915527344" text="id" />
+            <TableColumn fx:id="nameColumn" prefWidth="295.39996337890625" text="name" />
+            <TableColumn fx:id="priceColumn" minWidth="0.0" prefWidth="177.4000244140625" text="price" />
+         </columns>
+      </TableView>
+      <Button fx:id="addToCartButton" layoutX="356.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleAddToCart" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: #1c4093;" text="Добавить в корзину" textFill="WHITE" underline="true" />
+      <Button fx:id="viewCartButton" layoutX="414.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleViewCart" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: #102da6;" text="Корзина" textFill="WHITE" underline="true" />
+      <Button fx:id="logoutButton" layoutX="251.0" layoutY="543.0" mnemonicParsing="false" onAction="#handleLogoutButtonAction" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: #182ba5;" text="Назад" textFill="WHITE" underline="true" />
+   </children>
+</Pane>

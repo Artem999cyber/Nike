@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="514.0" style="-fx-background-color: #af145a;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegistrationController">
+   <children>
+      <ImageView fitHeight="328.0" fitWidth="520.0" layoutX="-4.0">
+         <image>
+            <Image url="@1comp.png" />
+         </image>
+      </ImageView>
+      <CubicCurve controlX1="61.42970275878906" controlX2="61.4296875" controlY1="3.0" controlY2="3.0" endX="192.0" endY="3.0" fill="#fdfced" layoutX="143.0" layoutY="304.0" startX="61.4296875" startY="3.0" stroke="#c93948" strokeWidth="0.0" />
+      <TextField fx:id="nicknameField" layoutX="156.0" layoutY="380.0" prefHeight="26.0" prefWidth="199.0" promptText="Никнейм" />
+      <TextField fx:id="loginField" layoutX="156.0" layoutY="428.0" prefHeight="26.0" prefWidth="199.0" promptText="Логин" />
+      <PasswordField fx:id="passwordField" layoutX="156.0" layoutY="472.0" prefHeight="26.0" prefWidth="199.0" promptText="Пароль" />
+      <Button fx:id="registerButton" layoutX="174.0" layoutY="538.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: #bf2070;" text="Зарегистрироваться" textFill="WHITE" underline="true" />
+      <Text layoutX="18.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация">
+         <font>
+            <Font name="TTTravels-DemiBoldItalic" size="23.0" />
+         </font>
+      </Text>
+   </children>
+   <padding>
+      <Insets top="50.0" />
+   </padding>
+</Pane>

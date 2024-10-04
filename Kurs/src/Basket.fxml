@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="483.0" style="-fx-background-color: #b1b9c9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BasketController">
+   <children>
+      <ImageView fitHeight="155.0" fitWidth="483.0">
+         <image>
+            <Image url="@pngwing.com.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="19.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Корзина">
+         <font>
+            <Font name="TTTravels-DemiBoldItalic" size="23.0" />
+         </font>
+      </Text>
+      <TableView fx:id="orderTable" layoutX="1.0" layoutY="157.0" prefHeight="336.0" prefWidth="483.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="36.0" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="250.0" text="Name" />
+            <TableColumn fx:id="priceColumn" prefWidth="112.0" text="Price" />
+            <TableColumn fx:id="lotColumn" prefWidth="81.0" text="Количество" />
+         </columns>
+      </TableView>
+      <Label fx:id="totalPriceLabel" layoutX="240.0" layoutY="494.0" text="Итог:">
+         <font>
+            <Font name="TTTravels-DemiBold" size="14.0" />
+         </font>
+      </Label>
+
+
+
+
+      <Button fx:id="viewCartButton" layoutX="221.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleViewCart" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: #1c4093;" text="Очистить" textFill="WHITE" underline="true" />
+      <Label fx:id="totalPriceLabel1" layoutX="19.0" layoutY="511.0" text="Спасибо за заказ!" visible="false">
+         <font>
+            <Font name="TTTravels-DemiBold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton1" layoutX="369.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleOrderButtonAction" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: #102da6;" text="Оплатить" textFill="WHITE" underline="true" />
+      <Button fx:id="logoutButton" layoutX="53.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleLogoutButtonAction" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: #1421af;" text="Выход" textFill="WHITE" underline="true" />
+   </children>
+</Pane>
