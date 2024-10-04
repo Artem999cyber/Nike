@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="462.0" style="-fx-background-color: #b1b9c9;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AccountantController">
+    <children>
+        <Text layoutX="146.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Отчёт экономиста">
+            <font>
+                <Font name="TTTravels-DemiBoldItalic" size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="98.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="              Расчетная ведомость ">
+            <font>
+                <Font name="TTTravels-DemiBold" size="14.0" />
+            </font>
+        </Text>
+        <TableView fx:id="economicTable" layoutX="14.0" layoutY="66.0" prefHeight="204.0" prefWidth="437.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="23.0" text="ID" />
+                <TableColumn fx:id="dateColumn" prefWidth="93.0" text="Дата" />
+                <TableColumn fx:id="revenueColumn" prefWidth="95.0" text="Доход" />
+                <TableColumn fx:id="expensesColumn" prefWidth="114.0" text="Расходы" />
+                <TableColumn fx:id="profitColumn" prefWidth="100.0" text="Прибыль" />
+            </columns>
+        </TableView>
+      <Text layoutX="149.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Диаграмма выручки">
+         <font>
+            <Font name="TTTravels-DemiBold" size="14.0" />
+         </font>
+      </Text>
+        <BarChart fx:id="profitChart" blendMode="COLOR_BURN" layoutX="-3.0" layoutY="290.0" prefHeight="282.0" prefWidth="452.0" style="-fx-alternative-column-fill-visible: 1; -fx-border-color: ;" styleClass="1">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" tickLabelRotation="90.0" fx:id="xAxis" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" upperBound="50000.0" />
+            </yAxis>
+        </BarChart>
+        <Button fx:id="logoutButton" layoutX="205.0" layoutY="556.0" mnemonicParsing="false" onAction="#handleLogoutButtonAction" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: #182ba5;" text="Выход" textFill="WHITE" underline="true" />
+    </children>
+    <padding>
+        <Insets top="50.0" />
+    </padding>
+</Pane>

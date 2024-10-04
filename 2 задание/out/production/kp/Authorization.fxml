@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="514.0" style="-fx-background-color: #3e62cd;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserLoginController">
+   <children>
+      <ImageView fitHeight="330.0" fitWidth="520.0" layoutX="-4.0">
+         <image>
+            <Image url="@comp.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="loginField" layoutX="154.0" layoutY="357.0" prefHeight="26.0" prefWidth="199.0" promptText="Логин" />
+      <PasswordField fx:id="passwordField" layoutX="155.0" layoutY="409.0" prefHeight="26.0" prefWidth="199.0" promptText="Пароль" />
+      <Button fx:id="loginButton" layoutX="216.0" layoutY="466.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: #192dac;" text="Вход" textFill="WHITE" underline="true" />
+      <Button layoutX="171.0" layoutY="519.0" mnemonicParsing="false" onAction="#handleRegisterButtonAction" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: #13339f;" text="Зарегистрироваться" textFill="WHITE" underline="true" />
+      <Text layoutX="7.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Авторизация">
+         <font>
+            <Font name="TTTravels-DemiBoldItalic" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="346.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Васильев А.В. БИБ2205" wrappingWidth="162.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+   <padding>
+      <Insets top="50.0" />
+   </padding>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</Pane>
