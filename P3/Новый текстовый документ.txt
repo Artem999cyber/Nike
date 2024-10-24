@@ -1,0 +1,8 @@
+﻿sc create RBPO2024 binpath= c:\Project2.exe
+
+
+Удаление сервиса:
+sc delete SampleService
+
+
+installutil c:\Project2.exe
