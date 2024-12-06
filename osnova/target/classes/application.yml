@@ -1,0 +1,15 @@
+server:
+  port: 8189
+jwt:
+  secret: 3u6H0fNhkYzP2Y45zA4sQyE+L1x9J2Z2K0Lt9g==L3mz
+  expiration: 30m
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/AntivirusDB
+    username: ${ANTIVIRUS_DB_USER}
+    password: ${ANTIVIRUS_DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: create
